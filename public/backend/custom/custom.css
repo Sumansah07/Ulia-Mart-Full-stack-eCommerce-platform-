@@ -1,0 +1,163 @@
+@media (min-width: 320px) and (max-width: 1279.98px) {
+    .pb-650 {
+        padding-bottom: 0rem;
+    }
+}
+.h-25rem {
+    height: 25rem;
+}
+.tt-visit-store {
+    display: flex;
+    align-items: center;
+}
+.tt-visit-store svg {
+    width: 18px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+}
+.min-h-400 {
+    min-height: 400px;
+}
+
+.product-radio-btn li {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+.product-radio-btn li input {
+    display: none;
+}
+.product-radio-btn li label {
+    border: 1px dashed #ebebeb;
+    padding: 1px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.product-radio-btn li input:checked + label {
+    border-color: #006633;
+    color: #006633;
+}
+
+/* Admin Sidebar Dark Green Theme - SINGLE ACTIVE ITEM ONLY */
+/* Ensure default state for all sidebar links */
+.tt-side-nav .side-nav-item > .side-nav-link {
+    background-color: transparent;
+    color: inherit;
+}
+
+/* Only change SINGLE ACTIVE menu item background to dark green */
+.tt-side-nav .side-nav-item.tt-menu-item-active:not(.tt-menu-item-active ~ .side-nav-item.tt-menu-item-active) > .side-nav-link,
+.tt-side-nav .side-nav-item > .side-nav-link.active:not(.active ~ .side-nav-link.active) {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+/* Only change HOVER state (interactive) - but not if already active */
+.tt-side-nav .side-nav-item:not(.tt-menu-item-active) > .side-nav-link:hover,
+.tt-side-nav .side-nav-item > .side-nav-link:not(.active):hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+/* Only change submenu HOVER state (interactive) */
+.tt-side-nav .side-nav-item .collapse .side-nav-item > .side-nav-link:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+/* Only change active menu item border/indicator */
+.tt-side-nav .side-nav-item.tt-menu-item-active::before {
+    background-color: #006633 !important;
+}
+
+/* Only change icons in SINGLE ACTIVE menu item to white */
+.tt-side-nav .side-nav-item.tt-menu-item-active > .side-nav-link .tt-nav-link-icon,
+.tt-side-nav .side-nav-item > .side-nav-link.active .tt-nav-link-icon {
+    color: #ffffff !important;
+}
+
+/* Only change icons on HOVER to white */
+.tt-side-nav .side-nav-item > .side-nav-link:hover .tt-nav-link-icon {
+    color: #ffffff !important;
+}
+
+/* Sidebar collapse/expand toggle button - Subtle Dark Green Theme */
+.tt-toggle-sidebar {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 1px solid #006633 !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+}
+
+.tt-toggle-sidebar:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-color: #006633 !important;
+}
+
+.tt-toggle-sidebar span,
+.tt-toggle-sidebar i,
+.tt-toggle-sidebar svg {
+    color: #006633 !important;
+    stroke: #006633 !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.tt-toggle-sidebar:hover span,
+.tt-toggle-sidebar:hover i,
+.tt-toggle-sidebar:hover svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* Mobile sidebar toggle button */
+.tt-mobile-toggle-brand .tt-toggle-sidebar {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 1px solid #006633 !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.tt-mobile-toggle-brand .tt-toggle-sidebar:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-color: #006633 !important;
+}
+
+/* Reset any conflicting active states */
+.tt-side-nav .side-nav-item:not(.tt-menu-item-active) > .side-nav-link {
+    background-color: transparent !important;
+}
+
+.tt-side-nav .side-nav-item > .side-nav-link:not(.active) {
+    background-color: transparent !important;
+}
+
+/* REMOVED OVERLY AGGRESSIVE GLOBAL STYLES - KEEPING ONLY INTERACTIVE SIDEBAR STATES */
+
+/* Mobile sidebar - SELECTIVE ONLY (active and hover states) */
+.offcanvas .tt-side-nav .side-nav-item.tt-menu-item-active > .side-nav-link,
+.offcanvas .tt-side-nav .side-nav-item > .side-nav-link.active {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+.offcanvas .tt-side-nav .side-nav-item > .side-nav-link:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+/* REMOVED ALL GLOBAL OVERRIDES - KEEPING ONLY SIDEBAR INTERACTIVE STATES */
+
+

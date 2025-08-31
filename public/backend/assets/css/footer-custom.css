@@ -1,0 +1,294 @@
+/* Custom Footer Styles */
+.main-footer {
+    background-color: #333;
+    color: white;
+    padding: 8px 0px 0px 0px;
+}
+
+.footer-top {
+    margin-bottom: -15px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 167px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-links a {
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #044b1e;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 4px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 10px;
+}
+
+.social-icon:hover {
+    background-color: #044b1e;
+}
+
+.footer-bottom {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 1px solid #444;
+    margin-top: 3px;
+}
+
+.footer-bottom .row {
+    margin-bottom: 0 !important;
+}
+
+.footer-bottom .col-md-6 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Aggressive override to eliminate all footer spacing */
+.main-footer,
+.main-footer * {
+    margin-bottom: 0 !important;
+}
+
+.main-footer .container {
+    padding-bottom: 0 !important;
+}
+
+.footer-bottom {
+    margin-bottom: 0 !important;
+}
+
+/* Ensure single line layout */
+.footer-bottom .row {
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+}
+
+.footer-bottom .col-md-6 {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+}
+
+.footer-bottom .col-md-6:first-child {
+    flex: 1 1 auto !important;
+    white-space: normal !important;
+}
+
+.footer-bottom .d-flex {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+.copyright {
+    color: #ccc;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.follow-text {
+    margin-right: 6px;
+    font-size: 12px;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #006633;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Increased z-index to ensure it's above other elements */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #044b1e;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-links li {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    .follow-text {
+        font-size: 10px;
+    }
+
+    /* Maintain single line on tablets */
+    .footer-bottom .row {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Adjust back-to-top button for tablets */
+    .back-to-top {
+        bottom: 70px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-links li {
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .follow-text {
+        font-size: 9px;
+    }
+
+    /* Maintain single line on mobile */
+    .footer-bottom .row {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Make social icons even smaller on mobile */
+    .social-icon {
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 8px !important;
+    }
+
+    /* Adjust back-to-top button for mobile */
+    .back-to-top {
+        bottom: 80px; /* Move higher to avoid bottom navigation */
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Ensure it's above the bottom toolbar */
+    .back-to-top.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1050; /* Higher z-index for mobile */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+    /* Further adjust back-to-top button for very small screens */
+    .back-to-top {
+        bottom: 85px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .back-to-top i {
+        font-size: 14px; /* Smaller icon */
+    }
+}
+
+/* Fix for iOS devices with bottom toolbar */
+@supports (-webkit-touch-callout: none) {
+    .back-to-top {
+        bottom: 90px; /* Extra space for iOS bottom bar */
+    }
+}
+
+/* Fix for iPhone 14 Pro and other devices with notches */
+@media screen and (device-width: 390px) and (device-height: 844px),
+       screen and (device-width: 393px) and (device-height: 852px),
+       screen and (device-width: 428px) and (device-height: 926px),
+       screen and (device-width: 430px) and (device-height: 932px),
+       screen and (max-width: 430px) {
+    /* Prevent horizontal overflow */
+    body, html {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Adjust footer for iPhone 14 Pro */
+    .main-footer {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    /* Ensure back-to-top button is properly positioned */
+    .back-to-top {
+        right: 10px;
+        bottom: 80px;
+    }
+
+    /* Fix bottom toolbar */
+    .bottom-toolbar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive fix for footer logo on medium screens */
+@media (max-width: 991.98px) {
+  .footer-logo img {
+    max-width: 90px !important;
+    height: auto !important;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

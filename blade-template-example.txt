@@ -1,0 +1,86 @@
+<!-- Original HTML file structure (simplified) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uliaa Design</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+    </header>
+    
+    <main>
+        <!-- Main content -->
+        <div class="hero-section">
+            <h1>Welcome to Uliaa Design</h1>
+        </div>
+        
+        <div class="products-section">
+            <!-- Product listings -->
+        </div>
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- Converted to Blade templates -->
+
+<!-- layouts/app.blade.php -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@yield('title', 'Uliaa Design')</title>
+    <link rel="stylesheet" href="{{ asset('frontend/uliaadesign/assets/css/style.css') }}">
+    @yield('styles')
+</head>
+<body>
+    <header>
+        @include('frontend.uliaadesign.partials.navigation')
+    </header>
+    
+    <main>
+        @yield('content')
+    </main>
+    
+    <footer>
+        @include('frontend.uliaadesign.partials.footer')
+    </footer>
+    
+    <script src="{{ asset('frontend/uliaadesign/assets/js/script.js') }}"></script>
+    @yield('scripts')
+</body>
+</html>
+
+<!-- home.blade.php -->
+@extends('frontend.uliaadesign.layouts.app')
+
+@section('title', 'Home - Uliaa Design')
+
+@section('content')
+<div class="hero-section">
+    <h1>Welcome to Uliaa Design</h1>
+</div>
+
+<div class="products-section">
+    @foreach($featuredProducts as $product)
+        <div class="product-card">
+            <img src="{{ asset('frontend/uliaadesign/assets/images/products/' . $product->thumbnail_image) }}" alt="{{ $product->name }}">
+            <h3>{{ $product->name }}</h3>
+            <p>{{ $product->price }}</p>
+            <a href="{{ route('uliaadesign.product.detail', $product->slug) }}" class="btn">View Details</a>
+        </div>
+    @endforeach
+</div>
+@endsection
+
+@section('scripts')
+<script>
+    // Any page-specific JavaScript
+</script>
+@endsection

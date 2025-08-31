@@ -1,0 +1,191 @@
+/* Mobile Navigation Fix CSS */
+
+/* Fix for mobile sidebar overlay issues */
+.offcanvas {
+    z-index: 1080 !important; /* Ensure it's above header elements */
+    width: 95% !important; /* Control the width of the sidebar - increased to 95% */
+    max-width: 450px !important; /* Maximum width - increased to 450px */
+}
+
+/* Ensure the offcanvas backdrop is properly positioned */
+.offcanvas-backdrop {
+    z-index: 1070 !important;
+}
+
+/* Fix for header overlay issue */
+.header-wrapper {
+    z-index: 1060 !important;
+    position: relative !important;
+}
+
+/* Ensure the main-wrapper doesn't overlap with the sidebar */
+.main-wrapper {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Fix for the mobile menu toggle button */
+.navbar-toggler {
+    z-index: 1040 !important;
+    padding: 6px 10px !important;
+    border: 1px solid #ddd !important;
+    background-color: white !important;
+}
+
+/* Ensure the mobile menu content is properly styled */
+.offcanvas-body {
+    padding: 1.5rem !important;
+    background-color: #f8f9fa !important;
+}
+
+/* Style the offcanvas header */
+.offcanvas-header {
+    background-color: white !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    padding: 15px !important;
+}
+
+/* Style the mobile menu items */
+.offcanvas-body .nav-item {
+    border-bottom: 1px solid #f0f0f0 !important;
+    padding: 8px 0 !important;
+    text-align: left !important;
+}
+
+.offcanvas-body .nav-link {
+    color: #006633 !important; /* Brand green color */
+    font-weight: 500 !important;
+    padding: 12px 0 !important;
+    font-size: 16px !important;
+    display: block !important;
+}
+
+/* Style submenu items */
+.offcanvas-body .submenu {
+    list-style: none !important;
+    padding-left: 20px !important; /* Add left padding for left alignment */
+    margin-top: 5px !important;
+    text-align: left !important;
+}
+
+.offcanvas-body .submenu li {
+    padding: 5px 0 !important;
+}
+
+.offcanvas-body .submenu a {
+    color: #666 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    display: block !important;
+}
+
+/* Fix for the mobile toolbar at the bottom */
+.mobile-toolbar {
+    z-index: 1050 !important;
+    transition: visibility 0.3s ease !important;
+}
+
+/* Hide mobile toolbar when sidebar is open */
+body.offcanvas-active .mobile-toolbar {
+    visibility: hidden !important;
+}
+
+/* Hide cart sidebar when mobile menu is open */
+body.offcanvas-active .cart-sidebar {
+    visibility: hidden !important;
+}
+
+/* Add transition to mobile search */
+.mobile-search {
+    transition: visibility 0.3s ease !important;
+}
+
+/* Style the account buttons in the sidebar */
+.offcanvas-body .btn-outline-secondary {
+    border-color: #006633 !important;
+    color: #006633 !important;
+    transition: all 0.3s ease !important;
+}
+
+.offcanvas-body .btn-outline-secondary:hover {
+    background-color: #006633 !important;
+    color: white !important;
+}
+
+.offcanvas-body .btn-success {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    transition: all 0.3s ease !important;
+}
+
+.offcanvas-body .btn-success:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+}
+
+/* Ensure the main content doesn't overlap with the sidebar */
+@media (max-width: 767.98px) {
+    .main-wrapper {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    body.offcanvas-active {
+        overflow: hidden !important;
+    }
+
+    /* Ensure the main content area doesn't have unwanted margins */
+    .main-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Fix for the offcanvas sidebar */
+    .offcanvas-start {
+        top: 0 !important;
+        left: 0 !important;
+        border-right: 1px solid rgba(0,0,0,.2) !important;
+        transform: translateX(-100%) !important;
+    }
+
+    .offcanvas.show {
+        transform: none !important;
+    }
+
+    /* Ensure the header doesn't overlay the sidebar */
+    .header-wrapper {
+        position: relative !important;
+        transition: visibility 0.3s ease !important;
+    }
+
+    /* Hide header when sidebar is open */
+    body.offcanvas-active .header-wrapper {
+        visibility: hidden !important;
+    }
+
+    /* Hide mobile search when sidebar is open */
+    body.offcanvas-active .mobile-search {
+        visibility: hidden !important;
+    }
+
+    /* Fix for the mobile menu toggle button */
+    .navbar-toggler {
+        position: relative !important;
+        z-index: 1090 !important;
+    }
+
+    /* Keep the close button visible when sidebar is open */
+    .offcanvas .btn-close {
+        position: absolute !important;
+        top: 10px !important;
+        right: 10px !important;
+        z-index: 1100 !important;
+        background-color: white !important;
+        padding: 10px !important;
+        border-radius: 50% !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+    }
+}

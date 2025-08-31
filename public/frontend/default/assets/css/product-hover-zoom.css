@@ -1,0 +1,27 @@
+/* Product Card Hover Zoom Effect */
+
+.vertical-product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform;
+    overflow: visible;
+}
+
+.vertical-product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.vertical-product-card .thumbnail {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.vertical-product-card .thumbnail img {
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+}
+
+.vertical-product-card:hover .thumbnail img {
+    transform: scale(1.15);
+}

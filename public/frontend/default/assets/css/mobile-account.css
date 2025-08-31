@@ -1,0 +1,509 @@
+/* Mobile Account Dashboard Styles */
+
+/* General Styles */
+.mobile-account-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.mobile-account-profile {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-account-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.mobile-account-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-account-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.mobile-account-email {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Mobile Breadcrumb */
+.mobile-account-breadcrumb {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.mobile-account-breadcrumb .breadcrumb-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.mobile-account-breadcrumb .breadcrumb-links {
+    font-size: 14px;
+    color: #777;
+}
+
+.mobile-account-breadcrumb .breadcrumb-links a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.mobile-account-breadcrumb .breadcrumb-separator {
+    margin: 0 5px;
+}
+
+.mobile-account-breadcrumb .current-page {
+    color: #777;
+}
+
+/* Tab Navigation */
+.mobile-account-tabs {
+    display: flex;
+    overflow-x: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.mobile-account-tabs::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.mobile-account-tabs.single-row {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.mobile-account-tabs .nav-link {
+    white-space: nowrap;
+    padding: 12px 15px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mobile-account-tabs .nav-link.active {
+    color: #4CAF50;
+    border-bottom-color: #4CAF50;
+}
+
+/* Tab Content */
+.mobile-tab-content-container {
+    background-color: #f8f9fa;
+}
+
+.mobile-tab-content {
+    display: none;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.mobile-tab-content.active {
+    display: block;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.welcome-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.welcome-section p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.welcome-dot {
+    height: 3px;
+    width: 40px;
+    background-color: #4CAF50;
+    margin: 10px 0;
+}
+
+/* Order Statistics */
+.mobile-order-stats {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.mobile-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.mobile-stat-box .stat-icon {
+    margin-bottom: 10px;
+}
+
+.mobile-stat-box .stat-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.mobile-stat-box .stat-content .number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mobile-stat-box .stat-content .label {
+    color: #555;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Account Section */
+.mobile-account-section {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.mobile-account-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-account-section h3 .edit-link {
+    font-size: 13px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.mobile-contact-info h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.mobile-contact-info p {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+.mobile-contact-info .edit-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Address Section */
+.mobile-address-section {
+    margin-top: 15px;
+}
+
+.mobile-address-box {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.mobile-address-box h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.mobile-address-box address {
+    margin-bottom: 10px;
+    color: #555;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.mobile-address-box .edit-address {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Mobile Profile Section */
+.mobile-profile-section {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-profile-info {
+    margin-top: 15px;
+}
+
+.mobile-profile-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-profile-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.mobile-profile-value {
+    color: #0066cc;
+    font-size: 15px;
+}
+
+.mobile-profile-value a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.mobile-profile-value a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Settings Section */
+.mobile-settings-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-settings-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mobile-settings-options {
+    padding-left: 5px;
+}
+
+.mobile-settings-options .form-check {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mobile-settings-options .form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.25em;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+}
+
+.mobile-settings-options .form-check-input[type="radio"] {
+    border-radius: 50%;
+}
+
+.mobile-settings-options .form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.mobile-settings-options .form-check-label {
+    font-size: 14px;
+    padding-left: 8px;
+    color: #333;
+    cursor: pointer;
+}
+
+.mobile-settings-options .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+@media (min-width: 576px) {
+    .mobile-stat-box .stat-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-stat-box .stat-content .number {
+        font-size: 20px;
+    }
+
+    .mobile-stat-box .stat-content .label {
+        font-size: 13px;
+    }
+
+    /* Profile styles for small devices */
+    .mobile-profile-row {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-profile-section {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Tablet styles */
+    .mobile-account-container {
+        margin-bottom: 40px;
+    }
+
+    .mobile-account-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mobile-account-name {
+        font-size: 20px;
+    }
+
+    .mobile-account-email {
+        font-size: 15px;
+    }
+
+    .mobile-account-tabs .nav-link {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
+
+    .welcome-section p {
+        font-size: 15px;
+    }
+
+    .mobile-stat-box {
+        padding: 15px;
+    }
+
+    .mobile-stat-box .stat-icon img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mobile-stat-box .stat-content .number {
+        font-size: 22px;
+    }
+
+    .mobile-stat-box .stat-content .label {
+        font-size: 14px;
+    }
+
+    .mobile-account-section h3 {
+        font-size: 18px;
+    }
+
+    .mobile-contact-info h4,
+    .mobile-address-box h4 {
+        font-size: 16px;
+    }
+
+    .mobile-contact-info p,
+    .mobile-address-box address {
+        font-size: 15px;
+    }
+
+    /* Profile responsive styles for tablet */
+    .mobile-profile-section {
+        padding: 20px;
+    }
+
+    .mobile-profile-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-profile-label {
+        font-size: 15px;
+        width: 40%;
+    }
+
+    .mobile-profile-value {
+        font-size: 16px;
+        width: 60%;
+        text-align: right;
+    }
+
+    /* Settings responsive styles for tablet */
+    .mobile-settings-section {
+        padding: 20px;
+    }
+
+    .mobile-settings-section h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-settings-options {
+        padding-left: 10px;
+    }
+
+    .mobile-settings-options .form-check {
+        margin-bottom: 15px;
+    }
+
+    .mobile-settings-options .form-check-label {
+        font-size: 15px;
+    }
+
+    .mobile-settings-options .btn-success {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

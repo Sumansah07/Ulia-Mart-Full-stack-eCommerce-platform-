@@ -1,0 +1,99 @@
+/* Sidebar Fix CSS */
+
+/* Fix for unwanted white sidebar on the left side in production */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the main wrapper takes full width */
+.main-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for the main content area */
+.main-content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for the header wrapper */
+.header-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for the navigation wrapper */
+.nav-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for the container class to ensure proper alignment */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fix for mobile devices */
+@media (max-width: 767.98px) {
+    html, body,
+    .main-wrapper,
+    .main-content,
+    .header-wrapper,
+    .nav-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Fix for iPhone and other devices with notches */
+@media screen and (device-width: 390px) and (device-height: 844px),
+       screen and (device-width: 393px) and (device-height: 852px),
+       screen and (device-width: 428px) and (device-height: 926px),
+       screen and (device-width: 430px) and (device-height: 932px),
+       screen and (max-width: 430px) {
+    
+    html, body,
+    .main-wrapper,
+    .main-content,
+    .header-wrapper,
+    .nav-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Uliaa Mart",
+    "short_name": "Uliaa Mart",
+    "start_url": "/",
+    "background_color": "#006633",
+    "description": "Uliaa Mart - Your Online Grocery Store",
+    "display": "standalone",
+    "theme_color": "#006633",
+    "icons": [
+        {
+            "src": "frontend/default/assets/images/uliaa-mart-logo.jpeg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+/* Shop Breadcrumb CSS */
+
+/* Main container for the shop breadcrumb */
+.shop-breadcrumb {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Breadcrumb container */
+.shop-breadcrumb .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side - Page title */
+.shop-breadcrumb .page-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Right side - Breadcrumb navigation */
+.shop-breadcrumb .breadcrumb {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+/* Breadcrumb items */
+.shop-breadcrumb .breadcrumb-item {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Breadcrumb links */
+.shop-breadcrumb .breadcrumb-item a {
+    color: #777;
+    text-decoration: none;
+}
+
+/* Active breadcrumb item */
+.shop-breadcrumb .breadcrumb-item.active {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Breadcrumb separator */
+.shop-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #999;
+    font-size: 10px;
+    padding: 0 8px;
+    position: relative;
+    top: -1px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 767px) {
+    .shop-breadcrumb .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shop-breadcrumb .breadcrumb {
+        margin-top: 5px;
+    }
+
+    .shop-breadcrumb .page-title {
+        font-size: 16px;
+    }
+
+    .shop-breadcrumb .breadcrumb-item {
+        font-size: 12px;
+    }
+}

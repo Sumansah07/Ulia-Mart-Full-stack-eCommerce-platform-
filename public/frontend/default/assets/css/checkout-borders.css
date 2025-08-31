@@ -1,0 +1,149 @@
+/* Checkout Borders and Shadows CSS */
+
+/* Add subtle borders and shadows to all blocks */
+.checkout-page .block {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 5px !important;
+    padding: 15px !important;
+    background-color: #fff !important;
+    margin-bottom: 15px !important;
+}
+
+/* Add subtle borders to address blocks */
+.tt-address-info {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle borders to logistics blocks */
+.checkout-logistics .checkout-radio {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle borders to order summary */
+.order-summary, 
+.order-summary .table-bottom-brd,
+.order-summary .order-table,
+.order-totals {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle hover effect */
+.checkout-page .block:hover,
+.tt-address-info:hover,
+.checkout-logistics .checkout-radio:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Add subtle borders to table rows */
+.checkout-page table tr {
+    border-bottom: 1px solid #f0f0f0 !important;
+}
+
+/* Add subtle borders to form controls */
+.checkout-page .form-control {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle borders to payment methods */
+.payment-methods .accordion-item {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+    margin-bottom: 8px !important;
+}
+
+/* Add subtle borders to promocode section */
+.apply-code .input-group {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle borders to order comments */
+.order-comments textarea {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+}
+
+/* Add subtle borders to shipping address */
+.shipping-address {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+    padding: 15px !important;
+}
+
+/* Add subtle borders to billing address */
+.billing-address {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+    padding: 15px !important;
+}
+
+/* Add subtle borders to contact information */
+.contact-information {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    border-radius: 4px !important;
+    padding: 15px !important;
+}
+
+/* Add subtle borders to place order button */
+.checkout-page .btn-primary {
+    border: 1px solid #006633 !important;
+    box-shadow: 0 2px 5px rgba(0, 102, 51, 0.2) !important;
+}
+
+/* Add subtle hover effect to place order button */
+.checkout-page .btn-primary:hover {
+    box-shadow: 0 3px 8px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* Add subtle borders to section titles */
+.checkout-page .title {
+    border-bottom: 1px solid #f0f0f0 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Add subtle background to section titles */
+.checkout-page .title {
+    background-color: #f9f9f9 !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Fix for logistics section */
+.checkout-logistics .radio-right img {
+    max-width: 60px !important;
+    max-height: 60px !important;
+}
+
+/* Reduce vertical spacing */
+.checkout-logistics .checkout-radio {
+    padding: 10px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Reduce gap between sections */
+.checkout-page .block {
+    margin-bottom: 10px !important;
+}
+
+/* Reduce vertical gap between contact info and order summary */
+.row[style="margin-bottom: 60px;"],
+.row[style="margin-bottom: 10px;"] {
+    margin-bottom: 10px !important;
+}

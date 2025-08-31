@@ -1,0 +1,40 @@
+/*
+|--------------------------------------------------------------------------
+| Uliaadesign Frontend Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::group(['prefix' => 'uliaadesign', 'middleware' => ['web'], 'namespace' => 'App\Http\Controllers\Frontend\UliaaDesign'], function () {
+    // Home page
+    Route::get('/', 'HomeController@index')->name('uliaadesign.home');
+    
+    // About page
+    Route::get('/about', 'HomeController@about')->name('uliaadesign.about');
+    
+    // Contact page
+    Route::get('/contact', 'HomeController@contact')->name('uliaadesign.contact');
+    
+    // Products pages
+    Route::get('/products', 'ProductController@index')->name('uliaadesign.products');
+    Route::get('/product/{slug}', 'ProductController@show')->name('uliaadesign.product.detail');
+    Route::get('/category/{slug}', 'CategoryController@show')->name('uliaadesign.category');
+    
+    // Cart and checkout
+    Route::get('/cart', 'CartController@index')->name('uliaadesign.cart');
+    Route::post('/cart/add', 'CartController@add')->name('uliaadesign.cart.add');
+    Route::post('/cart/update', 'CartController@update')->name('uliaadesign.cart.update');
+    Route::get('/checkout', 'CheckoutController@index')->name('uliaadesign.checkout');
+    Route::post('/checkout/place-order', 'CheckoutController@placeOrder')->name('uliaadesign.checkout.place-order');
+    
+    // User account pages
+    Route::group(['middleware' => ['auth']], function () {
+        Route::get('/my-account', 'AccountController@index')->name('uliaadesign.my-account');
+        Route::get('/orders', 'AccountController@orders')->name('uliaadesign.orders');
+        Route::get('/order/{code}', 'AccountController@orderDetail')->name('uliaadesign.order.detail');
+    });
+});
+
+// Redirect root to uliaadesign frontend
+Route::get('/', function () {
+    return redirect()->route('uliaadesign.home');
+});

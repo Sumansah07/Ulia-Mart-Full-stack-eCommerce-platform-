@@ -1,0 +1,130 @@
+/* Mobile Toolbar Redesign CSS */
+
+/* Main toolbar container */
+.mobile-toolbar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #fff !important;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1050 !important; /* Increased z-index to ensure it's above other elements */
+    height: 65px !important; /* Increased height slightly */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+    border-top: 1px solid #eee !important;
+    padding-bottom: env(safe-area-inset-bottom, 0) !important; /* iOS safe area support */
+}
+
+/* Table layout for the toolbar */
+.mobile-toolbar .d-table {
+    display: flex !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Individual toolbar items */
+.mobile-toolbar-item {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 5px 0 !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    position: relative !important;
+    height: 100% !important;
+}
+
+/* Active state for toolbar items */
+.mobile-toolbar-item.active {
+    color: #006633 !important;
+}
+
+.mobile-toolbar-item.active .mobile-toolbar-icon svg path {
+    fill: #006633 !important;
+}
+
+/* Icon container */
+.mobile-toolbar-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 4px !important;
+    position: relative !important;
+}
+
+/* Icon styling */
+.mobile-toolbar-icon svg,
+.mobile-toolbar-icon i {
+    width: 26px !important;
+    height: 26px !important;
+    display: block !important;
+    font-size: 24px !important;
+}
+
+/* Label styling */
+.mobile-toolbar-label {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    margin-top: 2px !important;
+    display: block !important;
+    white-space: nowrap !important;
+}
+
+/* Cart counter badge */
+.mobile-toolbar-item .cart-counter {
+    position: absolute !important;
+    top: -5px !important;
+    right: 50% !important;
+    transform: translateX(10px) !important;
+    font-size: 11px !important;
+    min-width: 20px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    border-radius: 50% !important;
+    background-color: #dc3545 !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Home icon */
+.home-icon {
+    color: #333 !important;
+}
+
+/* Shop icon */
+.shop-icon {
+    color: #333 !important;
+}
+
+/* Cart icon */
+.cart-icon {
+    color: #333 !important;
+}
+
+/* Account icon */
+.account-icon {
+    color: #333 !important;
+}
+
+/* Hide the subtotal price in mobile toolbar */
+.mobile-toolbar .sub-total-price {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .mobile-toolbar {
+        display: none !important;
+    }
+}

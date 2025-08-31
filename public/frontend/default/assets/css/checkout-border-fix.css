@@ -1,0 +1,185 @@
+/* Remove yellow/orange borders from checkout page */
+
+/* Completely remove all borders from the checkout page */
+.checkout-page * {
+    border-color: transparent !important;
+}
+
+/* Add back essential borders with a subtle color */
+.checkout-form .form-control,
+.checkout-page .block,
+.tt-address-info,
+.delivery-methods .customRadio,
+.order-summary,
+.order-summary .table-bottom-brd,
+.order-summary .order-table,
+.order-totals,
+.payment-methods .accordion-item,
+.apply-code .input-group,
+.order-comments textarea,
+.order-summary .subtotal-wrapper {
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Table borders */
+.checkout-page table {
+    border-collapse: collapse !important;
+}
+
+.checkout-page table,
+.checkout-page th,
+.checkout-page td {
+    border: none !important;
+}
+
+.checkout-page th,
+.checkout-page td {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Target specific elements with inline styles */
+[style*="border: 1px dashed #ffa500"],
+[style*="border:1px dashed #ffa500"],
+[style*="border: 1px dashed #006400"],
+[style*="border:1px dashed #006400"] {
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Specifically target the order summary table borders */
+.order-summary-table,
+.order-summary-table * {
+    border: none !important;
+}
+
+/* Remove dotted/dashed borders */
+.checkout-page *[style*="dotted"],
+.checkout-page *[style*="dashed"] {
+    border-style: solid !important;
+    border-color: #e0e0e0 !important;
+}
+
+/* Target the specific yellow borders in the image */
+.order-summary,
+.subtotal,
+.order-summary table,
+.subtotal table {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove all border colors */
+.checkout-page [style*="border-color"],
+.checkout-page [style*="border-top-color"],
+.checkout-page [style*="border-right-color"],
+.checkout-page [style*="border-bottom-color"],
+.checkout-page [style*="border-left-color"] {
+    border-color: transparent !important;
+}
+
+/* Remove all outline colors */
+.checkout-page [style*="outline-color"] {
+    outline-color: transparent !important;
+}
+
+/* Remove all yellow/orange colors */
+.checkout-page [style*="#ffa500"],
+.checkout-page [style*="#FFA500"],
+.checkout-page [style*="orange"],
+.checkout-page [style*="yellow"] {
+    border-color: transparent !important;
+}
+
+/* Fix vertical spacing issues */
+.full-width-order-summary {
+    margin-top: 0 !important;
+}
+
+.row + .row {
+    margin-top: 0 !important;
+}
+
+.checkout-page .block {
+    margin-bottom: 5px !important;
+}
+
+.order-summary {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Fix spacing in the checkout page */
+.checkout-section {
+    padding: 30px 0 !important;
+    margin-bottom: 60px !important;
+}
+
+.checkout-page .row {
+    margin-top: 0 !important;
+}
+
+/* Remove any extra padding */
+.block-content {
+    padding: 0 !important;
+}
+
+/* Adjust subtotal position */
+.order-summary .col-md-4 {
+    margin-top: 0 !important;
+}
+
+/* Reduce spacing between title and content */
+.order-summary .title.mb-3,
+.order-summary .title.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Make table rows more compact */
+.order-summary table th,
+.order-summary table td {
+    padding: 4px !important;
+}
+
+/* Reduce spacing in the table */
+.order-summary .table {
+    margin-bottom: 0 !important;
+}
+
+/* Adjust vertical alignment */
+.order-summary .col-md-8 {
+    margin-bottom: 0 !important;
+}
+
+/* Create tight spacing like in the shipping address */
+.order-summary .table-responsive-sm {
+    margin-bottom: 2px !important;
+}
+
+/* Reduce all spacing in the order summary */
+.order-summary {
+    margin-bottom: 0 !important;
+}
+
+.order-summary h3.title {
+    margin-bottom: 0.25rem !important;
+}
+
+.order-summary .table th,
+.order-summary .table td {
+    padding: 2px !important;
+}
+
+/* Reduce the gap between sections */
+.checkout-page .block {
+    margin-bottom: 5px !important;
+}
+
+/* Add space between checkout content and footer */
+.checkout-section {
+    margin-bottom: 60px !important;
+    padding-bottom: 30px !important;
+}
+
+/* Ensure footer doesn't overlap with content */
+footer {
+    margin-top: 30px !important;
+}

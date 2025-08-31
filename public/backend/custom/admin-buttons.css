@@ -1,0 +1,147 @@
+/* Admin Panel Button Styles - Match Main Site Dark Green */
+
+/* Primary buttons */
+.btn-primary,
+.btn-primary:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff !important;
+    border: 1px solid #006633 !important;
+}
+
+.btn-primary:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff !important;
+    border-color: #004d26 !important;
+}
+
+/* Success buttons */
+.btn-success,
+.btn-success:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff !important;
+    border: 1px solid #006633 !important;
+}
+
+.btn-success:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff !important;
+    border-color: #004d26 !important;
+}
+
+/* Info buttons */
+.btn-info,
+.btn-info:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff !important;
+    border: 1px solid #006633 !important;
+}
+
+.btn-info:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff !important;
+    border-color: #004d26 !important;
+}
+
+/* View All buttons */
+.btn-view-all,
+a.btn-view-all,
+button.btn-view-all {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.btn-view-all:hover,
+a.btn-view-all:hover,
+button.btn-view-all:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Add Product button */
+.btn-add-product,
+a.btn-add-product,
+button.btn-add-product {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.btn-add-product:hover,
+a.btn-add-product:hover,
+button.btn-add-product:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Override any other button classes that might be used */
+.btn-success,
+.btn-info,
+.btn-primary {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+}
+
+/* Target specific buttons visible in the admin dashboard */
+.btn-add-product,
+button.btn-add-product,
+a.btn-add-product,
+a[href*="add-product"],
+button[href*="add-product"],
+a:contains("Add Product") {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.btn-add-product:hover,
+button.btn-add-product:hover,
+a.btn-add-product:hover,
+a[href*="add-product"]:hover,
+button[href*="add-product"]:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+.btn-manage-sales,
+button.btn-manage-sales,
+a.btn-manage-sales,
+a[href*="manage-sales"],
+button[href*="manage-sales"],
+a:contains("Manage Sales") {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.btn-manage-sales:hover,
+button.btn-manage-sales:hover,
+a.btn-manage-sales:hover,
+a[href*="manage-sales"]:hover,
+button[href*="manage-sales"]:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Target View All buttons */
+.btn-view-all,
+button.btn-view-all,
+a.btn-view-all,
+a:contains("View All") {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.btn-view-all:hover,
+button.btn-view-all:hover,
+a.btn-view-all:hover,
+a:contains("View All"):hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}

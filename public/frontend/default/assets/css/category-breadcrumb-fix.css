@@ -1,0 +1,163 @@
+/* Category Breadcrumb Fix CSS */
+
+/* Styles for the FRUITS & VEGETABLES breadcrumb at the top of category pages */
+.category-header-bar {
+    padding: 10px 0 !important;
+}
+
+/* Main title styling */
+.category-header-bar h2 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 5px !important;
+}
+
+/* Breadcrumb styling */
+.category-header-bar .breadcrumb {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.category-header-bar .breadcrumb-item a {
+    font-size: 14px !important;
+}
+
+.category-header-bar .breadcrumb-item.active {
+    font-size: 14px !important;
+}
+
+/* Back button styling */
+.back-to-products {
+    padding: 3px 8px !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+}
+
+/* Flex container for breadcrumb and back button */
+.category-header-bar .d-flex {
+    gap: 8px !important;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Adjust the main title */
+    .category-header-bar h2 {
+        font-size: 16px !important;
+        margin-bottom: 3px !important;
+    }
+
+    /* Adjust breadcrumb items */
+    .category-header-bar .breadcrumb-item a,
+    .category-header-bar .breadcrumb-item.active {
+        font-size: 12px !important;
+    }
+
+    /* Adjust the back button */
+    .back-to-products {
+        font-size: 11px !important;
+        padding: 2px 6px !important;
+    }
+
+    /* Adjust spacing between breadcrumb items */
+    .category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        content: ">" !important;
+        color: #777 !important;
+    }
+
+    /* Adjust the flex container for mobile */
+    .category-header-bar .d-flex {
+        gap: 5px !important;
+    }
+
+    /* Make breadcrumb text smaller on mobile */
+    .category-header-bar .breadcrumb {
+        font-size: 12px !important;
+    }
+
+    /* Ensure the breadcrumb doesn't wrap awkwardly */
+    .category-header-bar nav.me-auto {
+        margin-right: 5px !important;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Add specific styles for the breadcrumb in the image */
+    .category-header-bar {
+        background-color: #f5f5f5 !important;
+    }
+    /* Further adjustments for very small screens */
+    .category-header-bar {
+        padding: 8px 0 !important;
+    }
+
+    .category-header-bar h2 {
+        font-size: 14px !important;
+    }
+
+    .category-header-bar .breadcrumb-item a,
+    .category-header-bar .breadcrumb-item.active {
+        font-size: 10px !important;
+    }
+
+    .back-to-products {
+        font-size: 10px !important;
+        padding: 2px 5px !important;
+    }
+
+    /* Adjust the container padding */
+    .category-header-bar .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Make the breadcrumb more compact */
+    .category-header-bar .breadcrumb {
+        margin-bottom: 0 !important;
+    }
+
+    /* Adjust spacing between breadcrumb items */
+    .category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 3px !important;
+        padding-left: 3px !important;
+        font-size: 10px !important;
+    }
+
+    /* Fix for the specific breadcrumb in the image */
+    .category-header-bar .breadcrumb-item {
+        font-size: 10px !important;
+    }
+
+    /* Fix for the back arrow */
+    .back-to-products i {
+        font-size: 8px !important;
+    }
+
+    /* Adjust the flex container for very small screens */
+    .category-header-bar .d-flex {
+        gap: 3px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Make sure the breadcrumb doesn't get too small */
+    .category-header-bar nav.me-auto {
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    /* Ensure text doesn't overflow */
+    .category-header-bar .breadcrumb-item {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 80px !important;
+    }
+
+    /* Specific fix for the FRUITS & VEGETABLES breadcrumb */
+    .category-header-bar h2 {
+        font-size: 13px !important;
+        letter-spacing: -0.2px !important;
+    }
+}

@@ -1,0 +1,8 @@
+This is a placeholder for the FonePay QR code image.
+
+Please replace this file with the actual QR code image provided by your customer.
+
+The file should be named: fonepay-qr.png
+Location: public/frontend/pg/fonepay-qr.png
+
+The QR code image will be displayed in the FonePay payment option for customers to scan and make payments.

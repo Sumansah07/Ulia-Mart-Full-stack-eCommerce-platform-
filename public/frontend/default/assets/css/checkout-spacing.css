@@ -1,0 +1,141 @@
+/* Additional spacing for checkout page sections */
+.checkout-page .block {
+    margin-bottom: 30px !important;
+}
+
+/* Increase spacing between shipping address and available logistics */
+.shipping-address-block {
+    margin-bottom: 60px !important;
+}
+
+/* Add extra space after shipping address block */
+.shipping-address-block:after {
+    content: "";
+    display: block;
+    height: 30px;
+}
+
+/* Add extra space before available logistics block */
+.available-logistics-block {
+    margin-top: 30px !important;
+}
+
+/* Increase spacing between available logistics and billing address */
+.available-logistics-block {
+    margin-bottom: 40px !important;
+}
+
+/* Increase spacing between billing address and contact information */
+.billing-address-block {
+    margin-bottom: 60px !important;
+}
+
+/* Add extra space after billing address block */
+.billing-address-block:after {
+    content: "";
+    display: block;
+    height: 30px;
+}
+
+/* Add extra space before contact information block */
+.contact-information-block {
+    margin-top: 30px !important;
+}
+
+/* Increase spacing between contact information and other sections */
+.contact-information-block {
+    margin-bottom: 40px !important;
+}
+
+/* Add padding to each section */
+.checkout-page .block .block-content {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+/* Add more space between section titles and content */
+.checkout-page .block .title {
+    margin-bottom: 20px !important;
+}
+
+/* Add more space between form fields */
+.checkout-page .form-group {
+    margin-bottom: 20px !important;
+}
+
+/* Add more space between address blocks */
+.tt-address-content {
+    margin-bottom: 20px !important;
+}
+
+/* Add more space between radio options */
+.customRadio {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between sections in sidebar */
+.checkout-sidebar .block {
+    margin-bottom: 30px !important;
+}
+
+/* Add more space between payment methods */
+.payment-methods .accordion-item {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between delivery methods */
+.delivery-methods .customRadio {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between order comment and promocode */
+.order-comments {
+    margin-bottom: 40px !important;
+}
+
+/* Add more space between promocode and order summary */
+.apply-code {
+    margin-bottom: 40px !important;
+}
+
+/* Add more space between order summary and place order button */
+.order-summary {
+    margin-bottom: 30px !important;
+}
+
+/* Add more space between contact information fields */
+.contact-information-block .row .col-sm-6 {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between address fields */
+.address-form .form-group {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between logistics options */
+.checkout-logistics .checkout-radio {
+    margin-bottom: 15px !important;
+}
+
+/* Add more space between payment method options */
+.payment-methods .card-body {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+/* Add more space between order summary items */
+.order-table tr {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Add more space between subtotal items */
+.order-totals .d-flex {
+    margin-bottom: 10px !important;
+}
+
+/* Add more space between the main sections */
+.checkout-page .row.g-4 {
+    row-gap: 40px !important;
+}

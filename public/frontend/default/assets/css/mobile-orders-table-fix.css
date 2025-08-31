@@ -1,0 +1,221 @@
+/* Mobile Orders Table Fix CSS */
+
+/* Apply these styles only on mobile devices */
+@media (max-width: 767px) {
+    /* Make the table container scrollable horizontally */
+    .orders-table-container {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        position: relative !important;
+        padding-bottom: 10px !important;
+        scrollbar-width: thin !important; /* Firefox */
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    }
+
+    /* Style scrollbar for Chrome, Safari and Opera */
+    .orders-table-container::-webkit-scrollbar {
+        height: 4px !important;
+        background-color: #f1f1f1 !important;
+    }
+
+    .orders-table-container::-webkit-scrollbar-thumb {
+        background-color: #4CAF50 !important;
+        border-radius: 4px !important;
+    }
+
+    .orders-table-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1 !important;
+        border-radius: 4px !important;
+    }
+
+    /* No scroll indicator needed as we have a visible scrollbar */
+
+    /* Set table to have a minimum width to ensure scrolling */
+    .orders-table {
+        width: 100% !important;
+        min-width: 550px !important; /* Ensure table is wider than viewport to enable scrolling */
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        background-color: #fff !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Style table headers */
+    .orders-table th {
+        white-space: nowrap !important;
+        padding: 10px 8px !important;
+        font-size: 11px !important;
+        text-align: left !important;
+        vertical-align: middle !important;
+        border-bottom: 1px solid #eee !important;
+        font-weight: 600 !important;
+        color: #666 !important;
+        background-color: #f8f9fa !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 10 !important;
+        text-transform: uppercase !important;
+    }
+
+    /* Style table cells */
+    .orders-table td {
+        white-space: nowrap !important;
+        padding: 10px 8px !important;
+        font-size: 12px !important;
+        text-align: left !important;
+        vertical-align: middle !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    /* Add hover effect to rows */
+    .orders-table tbody tr:hover {
+        background-color: #f9f9f9 !important;
+    }
+
+    /* Set column widths */
+    .orders-table th:nth-child(1),
+    .orders-table td:nth-child(1) {
+        width: 30px !important;
+        min-width: 30px !important;
+        max-width: 30px !important;
+        text-align: center !important;
+    }
+
+    .orders-table th:nth-child(2),
+    .orders-table td:nth-child(2) {
+        width: 100px !important;
+        min-width: 100px !important;
+        max-width: 100px !important;
+    }
+
+    .orders-table th:nth-child(3),
+    .orders-table td:nth-child(3) {
+        width: 140px !important;
+        min-width: 140px !important;
+        max-width: 140px !important;
+    }
+
+    .orders-table th:nth-child(4),
+    .orders-table td:nth-child(4) {
+        width: 80px !important;
+        min-width: 80px !important;
+        max-width: 80px !important;
+        text-align: right !important;
+    }
+
+    .orders-table th:nth-child(5),
+    .orders-table td:nth-child(5) {
+        width: 70px !important;
+        min-width: 70px !important;
+        max-width: 70px !important;
+    }
+
+    .orders-table th:nth-child(6),
+    .orders-table td:nth-child(6) {
+        width: 40px !important;
+        min-width: 40px !important;
+        max-width: 40px !important;
+        text-align: center !important;
+    }
+
+    /* Style product image */
+    .orders-table .product-image img {
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 3px !important;
+        object-fit: cover !important;
+        vertical-align: middle !important;
+        margin-right: 6px !important;
+        display: inline-block !important;
+    }
+
+    /* Add colored dot before product image */
+    .orders-table td.product-image {
+        position: relative !important;
+        padding-left: 20px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .orders-table td.product-image::before {
+        content: '' !important;
+        position: absolute !important;
+        left: 8px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 6px !important;
+        height: 6px !important;
+        border-radius: 50% !important;
+        background-color: #F44336 !important; /* Red */
+    }
+
+    /* Different colors for different rows */
+    .orders-table tr:nth-child(2) td.product-image::before {
+        background-color: #FF9800 !important; /* Orange */
+    }
+
+    .orders-table tr:nth-child(3) td.product-image::before {
+        background-color: #FFEB3B !important; /* Yellow */
+    }
+
+    .orders-table tr:nth-child(4) td.product-image::before {
+        background-color: #F44336 !important; /* Red */
+    }
+
+    /* Style order status */
+    .orders-table .order-status {
+        display: inline-block !important;
+        padding: 2px 5px !important;
+        border-radius: 3px !important;
+        background-color: #e9f7ef !important;
+        color: #4CAF50 !important;
+        font-size: 9px !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.3px !important;
+    }
+
+    /* Style view button */
+    .orders-table .view-order a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 3px !important;
+        background-color: #f8f9fa !important;
+        color: #555 !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .orders-table .view-order a:hover {
+        background-color: #4CAF50 !important;
+        color: #fff !important;
+    }
+
+    /* Style the chevron icon */
+    .orders-table .view-order a svg {
+        width: 14px !important;
+        height: 14px !important;
+        display: none !important;
+    }
+
+    /* Replace eye icon with chevron */
+    .orders-table .view-order a::after {
+        content: '›' !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 1 !important;
+    }
+
+    /* Add some space at the bottom of the table for the scroll indicator */
+    .orders-table-container {
+        margin-bottom: 25px !important;
+    }
+
+    /* No touch indicator needed as we have a visible scrollbar */
+}

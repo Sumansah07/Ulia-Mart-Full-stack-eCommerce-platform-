@@ -1,0 +1,41 @@
+/* Hide tracking URL elements on mobile devices */
+
+/* Hide any tracking URL displays in mobile order tracking */
+@media (max-width: 767.98px) {
+    .tracking-url,
+    .tracking-url-container,
+    .alert-info:has(a[href*="track-order"]),
+    .alert:has(a[href*="track-order"]),
+    div:has(> small:contains("Tracking URL")),
+    .mobile-order-tracking-result .alert-info {
+        display: none !important;
+    }
+    
+    /* Hide any elements containing tracking URL text */
+    .mobile-order-tracking-result *:contains("Tracking URL:") {
+        display: none !important;
+    }
+    
+    /* Hide any links that contain tracking URLs */
+    a[href*="track-order?code="] {
+        display: none !important;
+    }
+    
+    /* Hide parent containers of tracking URL elements */
+    .alert:has(small:contains("Tracking URL")) {
+        display: none !important;
+    }
+}
+
+/* Additional safety - hide tracking URL elements globally if they have specific classes */
+.hide-tracking-url,
+.tracking-url-display,
+.order-tracking-url {
+    display: none !important;
+}
+
+/* Hide tracking URL in any alert boxes */
+.alert-info:has(small:contains("Tracking URL")),
+.alert:has(small:contains("Tracking URL")) {
+    display: none !important;
+}

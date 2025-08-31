@@ -1,0 +1,224 @@
+/* Custom Button Styles */
+
+/* Change primary button color to dark green */
+.btn-primary,
+.btn-primary:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff;
+    border: 1px solid #006633 !important;
+}
+
+.btn-primary:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff;
+    border-color: #004d26 !important;
+}
+
+/* Change Add to Cart button color to dark green */
+.btn-secondary,
+.btn-secondary:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff;
+    border: 1px solid #006633 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff;
+    border-color: #004d26 !important;
+}
+
+/* Change success button color to dark green */
+.btn-success,
+.btn-success:focus {
+    background-color: #006633 !important; /* Dark green */
+    color: #fff;
+    border: 1px solid #006633 !important;
+}
+
+.btn-success:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: #fff;
+    border-color: #004d26 !important;
+}
+
+/* Change cart button color to dark green */
+.cart-btn,
+.product-buttons .cart-btn {
+    background-color: #006633 !important; /* Dark green */
+    color: white !important;
+    border: none !important;
+}
+
+.cart-btn:hover,
+.product-buttons .cart-btn:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: white !important;
+}
+
+/* Change outline secondary button color to dark green */
+.btn-outline-secondary,
+.btn-outline-secondary:focus,
+a.btn-outline-secondary,
+a.btn-outline-secondary:focus,
+button.btn-outline-secondary,
+button.btn-outline-secondary:focus {
+    color: #006633 !important; /* Dark green */
+    border: 1px solid #006633 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-secondary:hover,
+a.btn-outline-secondary:hover,
+button.btn-outline-secondary:hover {
+    color: #fff !important;
+    background-color: #006633 !important; /* Dark green */
+    border-color: #006633 !important;
+}
+
+/* Ensure direct-add-to-cart-btn has dark green styling */
+.direct-add-to-cart-btn,
+a.direct-add-to-cart-btn,
+button.direct-add-to-cart-btn {
+    color: #006633 !important;
+    border-color: #006633 !important;
+    background-color: transparent !important;
+}
+
+.direct-add-to-cart-btn:hover,
+a.direct-add-to-cart-btn:hover,
+button.direct-add-to-cart-btn:hover {
+    color: #fff !important;
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+}
+
+/* Target the specific buttons in product cards */
+.vertical-product-card .btn-outline-secondary,
+.vertical-product-card .direct-add-to-cart-btn {
+    color: #006633 !important;
+    border-color: #006633 !important;
+    background-color: transparent !important;
+}
+
+.vertical-product-card .btn-outline-secondary:hover,
+.vertical-product-card .direct-add-to-cart-btn:hover {
+    color: #fff !important;
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+}
+
+/* Style checkout button in cart page */
+.checkout,
+a.checkout,
+button.checkout,
+#cartCheckout {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.checkout:hover,
+a.checkout:hover,
+button.checkout:hover,
+#cartCheckout:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Style the proceed to checkout button */
+.proceed-to-checkout,
+a.proceed-to-checkout,
+button.proceed-to-checkout {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.proceed-to-checkout:hover,
+a.proceed-to-checkout:hover,
+button.proceed-to-checkout:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Style the mini-cart checkout button */
+.cart-box-wrapper .btn-primary,
+.cart-box-wrapper a.btn-primary,
+.cart-box-wrapper button.btn-primary {
+    background-color: #006633 !important;
+    color: white !important;
+    border-color: #006633 !important;
+}
+
+.cart-box-wrapper .btn-primary:hover,
+.cart-box-wrapper a.btn-primary:hover,
+.cart-box-wrapper button.btn-primary:hover {
+    background-color: #004d26 !important;
+    color: white !important;
+    border-color: #004d26 !important;
+}
+
+/* Quantity Selector Styles */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100px;
+}
+
+.quantity-btn {
+    width: 32px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #006633;
+    color: white;
+}
+
+.quantity-input {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* Style search button in sidebar */
+.submit-icon-btn-secondary,
+button.submit-icon-btn-secondary {
+    background-color: #006633 !important; /* Dark green */
+    color: white !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+.submit-icon-btn-secondary:hover,
+button.submit-icon-btn-secondary:hover {
+    background-color: #004d26 !important; /* Darker green for hover */
+    color: white !important;
+}
+
+/* Style price range slider */
+.price-filter-range .ui-slider-range,
+.ui-slider-horizontal .ui-slider-range {
+    background-color: #006633 !important; /* Dark green */
+}
+
+.price-filter-range .ui-slider-handle,
+.ui-slider-handle {
+    border-color: #006633 !important; /* Dark green */
+    background-color: #fff !important;
+}

@@ -1,0 +1,622 @@
+/* POS System Dark Green Theme */
+/* Comprehensive styling for the Point of Sale interface */
+
+/* ===== TOP NAVIGATION BUTTONS ===== */
+
+/* Categories and Brands toggle buttons */
+.nav-pills .nav-link,
+.nav-tabs .nav-link {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    margin-right: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-pills .nav-link:hover,
+.nav-tabs .nav-link:hover {
+    background-color: #f0f8f4 !important;
+    color: #006633 !important;
+    border-color: #006633 !important;
+    transform: translateY(-2px) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-tabs .nav-link.active {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-color: #006633 !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* Add Item by Code button */
+.btn-outline-primary,
+.btn-outline-secondary {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-color: #006633 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* Customer section button */
+.btn-info,
+.btn-customer {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-info:hover,
+.btn-customer:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* ===== SCROLL NAVIGATION ARROWS ===== */
+
+/* Swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-top: -20px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 102, 51, 0.2) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: inherit !important;
+}
+
+/* Category slider navigation arrows */
+.category-slider .swiper-button-next,
+.category-slider .swiper-button-prev,
+.brand-slider .swiper-button-next,
+.brand-slider .swiper-button-prev {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 50% !important;
+    width: 35px !important;
+    height: 35px !important;
+    margin-top: -17.5px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 102, 51, 0.2) !important;
+}
+
+.category-slider .swiper-button-next:hover,
+.category-slider .swiper-button-prev:hover,
+.brand-slider .swiper-button-next:hover,
+.brand-slider .swiper-button-prev:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+.category-slider .swiper-button-next:after,
+.category-slider .swiper-button-prev:after,
+.brand-slider .swiper-button-next:after,
+.brand-slider .swiper-button-prev:after {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: inherit !important;
+}
+
+/* Custom scroll arrows */
+.scroll-arrow,
+.nav-arrow,
+.slider-arrow {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 50% !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 102, 51, 0.2) !important;
+}
+
+.scroll-arrow:hover,
+.nav-arrow:hover,
+.slider-arrow:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+.scroll-arrow i,
+.nav-arrow i,
+.slider-arrow i {
+    color: inherit !important;
+    font-size: 14px !important;
+    transition: color 0.3s ease !important;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+
+/* All Categories button - Active state */
+.tt-single-category-brand input[type="radio"]:checked + .tt-category-brand-info {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border: 2px solid #006633 !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* Category button hover state */
+.tt-category-brand-info:hover {
+    background-color: #f0f8f4 !important;
+    border-color: #006633 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.15) !important;
+}
+
+/* Category button text when selected */
+.tt-single-category-brand input[type="radio"]:checked + .tt-category-brand-info h6,
+.tt-single-category-brand input[type="radio"]:checked + .tt-category-brand-info .tt-available-item {
+    color: #ffffff !important;
+}
+
+/* Category button icon background when selected */
+.tt-single-category-brand input[type="radio"]:checked + .tt-category-brand-info .tt-icon-box {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* ===== SEARCH AND BUTTONS ===== */
+
+/* Search button */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+}
+
+/* Primary buttons */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+}
+
+/* Success buttons */
+.btn-success,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+.btn-success:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+}
+
+/* ===== PRODUCT CARDS ===== */
+
+/* Product card hover effect */
+.tt-pos-product-card:hover {
+    border-color: #006633 !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Product card selected state */
+.tt-pos-product-card.selected {
+    border-color: #006633 !important;
+    background-color: #f0f8f4 !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.2) !important;
+}
+
+/* Product price styling */
+.tt-pos-product-card .product-price,
+.tt-pos-product-card .price {
+    color: #006633 !important;
+    font-weight: 600 !important;
+}
+
+/* ===== CART SECTION ===== */
+
+/* Cart total section */
+.tt-pos-cart-total {
+    border-top: 2px solid #006633 !important;
+}
+
+/* Cart total text */
+.tt-pos-cart-total .total-amount,
+.tt-pos-cart-total .cart-total {
+    color: #006633 !important;
+    font-weight: 700 !important;
+}
+
+/* Checkout button */
+.tt-pos-checkout-btn,
+.checkout-btn {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+}
+
+.tt-pos-checkout-btn:hover,
+.checkout-btn:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.3) !important;
+}
+
+/* ===== QUANTITY CONTROLS ===== */
+
+/* Quantity increase/decrease buttons */
+.qty-btn,
+.quantity-btn,
+.btn-qty {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 4px !important;
+}
+
+.qty-btn:hover,
+.quantity-btn:hover,
+.btn-qty:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+}
+
+/* ===== SEARCH INPUT ===== */
+
+/* Search input focus state */
+.tt-search-box input:focus,
+.form-control:focus {
+    border-color: #006633 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 51, 0.25) !important;
+}
+
+/* Search icon */
+.tt-search-box .input-group-text {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+/* ===== BRAND SELECTION ===== */
+
+/* Brand buttons - same styling as categories */
+.tt-single-category-brand input[name="brand_id"]:checked + .tt-category-brand-info {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border: 2px solid #006633 !important;
+}
+
+/* ===== PAGINATION ===== */
+
+/* Pagination active page */
+.pagination .page-item.active .page-link {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f8f4 !important;
+    border-color: #006633 !important;
+    color: #006633 !important;
+}
+
+/* ===== ALERTS AND NOTIFICATIONS ===== */
+
+/* Success alerts */
+.alert-success {
+    background-color: #e8f5e8 !important;
+    border-color: #006633 !important;
+    color: #004d26 !important;
+}
+
+/* ===== MODAL STYLING ===== */
+
+/* Modal header */
+.modal-header {
+    border-bottom-color: #006633 !important;
+}
+
+/* Modal buttons */
+.modal .btn-primary {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+}
+
+.modal .btn-primary:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+}
+
+/* ===== LOADING STATES ===== */
+
+/* Loading spinner */
+.spinner-border-primary {
+    color: #006633 !important;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+@media (max-width: 768px) {
+    /* Mobile category buttons */
+    .tt-category-brand-info {
+        padding: 8px !important;
+    }
+
+    /* Mobile search button */
+    .btn-secondary {
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+    }
+
+    /* Mobile checkout button */
+    .tt-pos-checkout-btn {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+}
+
+/* ===== CUSTOM RADIO BUTTONS ===== */
+
+/* Hide default radio buttons */
+.tt-custom-radio {
+    display: none !important;
+}
+
+/* Custom radio button styling */
+.tt-custom-radio + label {
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ===== BILLING SECTION ===== */
+
+/* Billing section header */
+.billing-section h5,
+.billing-section .card-header {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #006633 !important;
+    padding: 12px 16px !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Customer selection dropdown */
+.customer-select,
+.form-select {
+    border-color: #006633 !important;
+    transition: all 0.3s ease !important;
+}
+
+.customer-select:focus,
+.form-select:focus {
+    border-color: #006633 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 51, 0.25) !important;
+}
+
+/* New Order button */
+.btn-new-order,
+.new-order-btn {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-new-order:hover,
+.new-order-btn:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    transform: translateY(-1px) !important;
+}
+
+/* ===== SEARCH AND FILTER SECTION ===== */
+
+/* Search input in main area */
+.pos-search-input,
+input[placeholder*="Search"] {
+    border-color: #006633 !important;
+    border-radius: 8px !important;
+    padding: 10px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.pos-search-input:focus,
+input[placeholder*="Search"]:focus {
+    border-color: #006633 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 51, 0.25) !important;
+}
+
+/* Add Item by Code link/button */
+.add-item-code,
+a[href*="code"],
+button[onclick*="code"] {
+    color: #006633 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    border: 2px solid #006633 !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    background-color: transparent !important;
+    transition: all 0.3s ease !important;
+}
+
+.add-item-code:hover,
+a[href*="code"]:hover,
+button[onclick*="code"]:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+/* ===== PRODUCT GRID STYLING ===== */
+
+/* Product cards in grid */
+.pos-product-grid .card,
+.product-card {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.pos-product-grid .card:hover,
+.product-card:hover {
+    border-color: #006633 !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 51, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Product prices in grid */
+.pos-product-grid .price,
+.product-card .price {
+    color: #006633 !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+/* ===== ADDITIONAL ENHANCEMENTS ===== */
+
+/* Add to cart buttons in product cards */
+.add-to-cart-btn,
+.cart-btn {
+    background-color: #006633 !important;
+    border-color: #006633 !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+}
+
+.add-to-cart-btn:hover,
+.cart-btn:hover {
+    background-color: #004d26 !important;
+    border-color: #004d26 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Price display */
+.product-price,
+.price-display {
+    color: #006633 !important;
+    font-weight: 600 !important;
+}
+
+/* Stock status */
+.stock-status.in-stock {
+    color: #006633 !important;
+}
+
+/* Category count badges */
+.category-count,
+.item-count {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 2px 8px !important;
+    font-size: 11px !important;
+}
+
+/* ===== SPECIFIC POS INTERFACE ELEMENTS ===== */
+
+/* Categories/Brands toggle buttons at top */
+.pos-nav-tabs .nav-item .nav-link,
+.pos-category-tabs .nav-link {
+    background-color: transparent !important;
+    color: #006633 !important;
+    border: 2px solid #006633 !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.pos-nav-tabs .nav-item .nav-link.active,
+.pos-category-tabs .nav-link.active {
+    background-color: #006633 !important;
+    color: #ffffff !important;
+    border-color: #006633 !important;
+}
+
+.pos-nav-tabs .nav-item .nav-link:hover,
+.pos-category-tabs .nav-link:hover {
+    background-color: #f0f8f4 !important;
+    color: #006633 !important;
+    transform: translateY(-2px) !important;
+}

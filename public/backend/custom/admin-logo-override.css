@@ -1,0 +1,13 @@
+/* Admin Panel Logo Override */
+.tt-brand-logo {
+    content: url('/frontend/default/assets/images/uliaa-mart-logo.jpeg');
+    max-height: 40px;
+    width: auto;
+}
+
+/* Mobile sidebar logo override */
+.offcanvas .tt-brand-logo {
+    content: url('/frontend/default/assets/images/uliaa-mart-logo.jpeg');
+    max-height: 40px;
+    width: auto;
+}

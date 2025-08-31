@@ -1,0 +1,91 @@
+/* Mobile Category Fix CSS */
+
+/* Mobile-specific adjustments for the Shop By Category section */
+@media (max-width: 767px) {
+    /* Make the category slider section more compact */
+    .category-slider-section {
+        padding: 10px 0 20px 0 !important;
+        margin-top: -15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Make the title smaller */
+    .slider-title {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Make the category cards taller to accommodate larger images */
+    .category-card {
+        height: 130px !important;
+        margin-bottom: 8px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Make the category images larger */
+    .category-card img {
+        height: 90px !important;
+        object-fit: contain !important;
+        padding: 4px !important;
+        flex: 1 !important;
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+    }
+
+    /* Make the category info section smaller */
+    .category-info {
+        padding: 4px !important;
+        height: 35px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    /* Make the category name smaller */
+    .category-info h5 {
+        font-size: 11px !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+    }
+
+    /* Make the item count smaller */
+    .category-info p {
+        font-size: 9px !important;
+        margin: 1px 0 0 !important;
+        line-height: 1 !important;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Further adjustments for very small screens */
+    .category-card {
+        height: 110px !important;
+    }
+
+    .category-card img {
+        height: 80px !important;
+        padding: 3px !important;
+    }
+
+    .category-info {
+        height: 30px !important;
+    }
+
+    .category-info h5 {
+        font-size: 10px !important;
+    }
+
+    .category-info p {
+        font-size: 8px !important;
+    }
+
+    /* Adjust the slider title for very small screens */
+    .slider-title {
+        font-size: 15px !important;
+    }
+}

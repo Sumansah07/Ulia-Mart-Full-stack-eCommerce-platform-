@@ -1,0 +1,64 @@
+/* Custom header styles */
+.top-bar {
+    padding: 15px 0 !important; /* Increased from 8px to 15px */
+    min-height: 45px; /* Added minimum height */
+}
+
+/* Adjust font size for better visibility */
+.top-bar .top-date,
+.top-bar .top-link,
+.top-bar .user-icon,
+.top-bar .dropdown-toggle {
+    font-size: 16px; /* Increased font size */
+}
+
+/* Adjust icon sizes */
+.top-bar .fa-lg {
+    font-size: 1.7em; /* Larger icons */
+}
+
+/* Adjust spacing between elements */
+.top-bar-item .gap-3 {
+    gap: 1rem !important; /* Increased gap between elements */
+}
+
+/* Ensure vertical alignment */
+.top-bar-content {
+    align-items: center;
+}
+
+/* Fix for iPhone 14 Pro and other modern devices */
+@media screen and (max-width: 430px) {
+    /* Prevent horizontal overflow */
+    body, html {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Adjust container width */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Fix for checkout page */
+    .checkout-page {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 767.98px) {
+    .top-bar {
+        padding: 10px 0 !important;
+    }
+
+    .top-bar-item {
+        margin-bottom: 5px !important;
+    }
+}

@@ -1,0 +1,85 @@
+/**
+ * Category Mobile Enhancements
+ * Enhances the appearance of category cards in mobile view
+ */
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Increase category card height on mobile */
+    .collection-slider-6items .category-item {
+        margin: 0 5px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Increase image container height */
+    .collection-slider-6items .category-item .zoom-scal {
+        height: 180px !important;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    /* Make images fill the entire container */
+    .collection-slider-6items .category-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        transition: transform 0.5s ease;
+    }
+    
+    /* Add hover effect */
+    .collection-slider-6items .category-item:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Adjust text size for better readability */
+    .collection-slider-6items .category-item .category-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    
+    .collection-slider-6items .category-item .counts {
+        font-size: 12px;
+        color: #777;
+    }
+    
+    /* Ensure slider loops continuously */
+    .collection-slider-6items .slick-track {
+        display: flex;
+    }
+    
+    /* Improve navigation for mobile */
+    .collection-slider-6items .slick-arrow {
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+    
+    .collection-slider-6items .slick-prev {
+        left: -10px;
+    }
+    
+    .collection-slider-6items .slick-next {
+        right: -10px;
+    }
+    
+    /* Improve dots navigation */
+    .collection-slider-6items .slick-dots {
+        bottom: -25px;
+    }
+    
+    .collection-slider-6items .slick-dots li button:before {
+        font-size: 10px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .collection-slider-6items .category-item .zoom-scal {
+        height: 160px !important;
+    }
+}

@@ -1,0 +1,4 @@
+/* Fix for text-secondary color */
+.text-secondary {
+    color: #6c757d !important; /* Grey color */
+}

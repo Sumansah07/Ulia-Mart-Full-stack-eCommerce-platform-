@@ -1,0 +1,78 @@
+/* Mobile Search Fix CSS */
+
+/* General styles for the search form */
+.search-container {
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* Style for the search input */
+.search-input {
+    flex: 1 !important;
+    height: 40px !important;
+    padding: 0 15px !important;
+    border: 1px solid #ddd !important;
+    border-right: none !important;
+    border-radius: 4px 0 0 4px !important;
+    font-size: 14px !important;
+}
+
+/* Style for the search button */
+.search-btn {
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #006633 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0 4px 4px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Make sure the mobile search is visible */
+    .mobile-search {
+        display: block !important;
+        visibility: visible !important;
+        padding: 10px 0 !important;
+        background-color: #f8f8f8 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    /* Style the search container */
+    .mobile-search .search-container {
+        padding: 0 10px !important;
+    }
+    
+    /* Hide category select on mobile */
+    .mobile-search .category-select-wrapper {
+        display: none !important;
+    }
+    
+    /* Make the search input take full width */
+    .mobile-search .search-input {
+        width: 100% !important;
+        flex: 1 !important;
+    }
+    
+    /* Position the search button properly */
+    .mobile-search .search-btn {
+        position: relative !important;
+        right: 0 !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .mobile-search .search-input {
+        font-size: 13px !important;
+    }
+    
+    .mobile-search .search-btn {
+        width: 38px !important;
+    }
+}

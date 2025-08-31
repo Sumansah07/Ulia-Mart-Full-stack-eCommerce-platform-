@@ -1,0 +1,198 @@
+/**
+ * Category Slider Fix for Mobile View
+ * This CSS enhances the category slider in mobile view:
+ * 1. Increases the height of category cards with images filling the entire card
+ * 2. Improves the appearance of the slider for better user experience
+ */
+
+/* General slider improvements */
+.collection-slider-6items {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Category item styling */
+.collection-slider-6items .category-item {
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+/* Image container styling */
+.collection-slider-6items .category-item .zoom-scal {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Image styling */
+.collection-slider-6items .category-item img {
+    transition: transform 0.5s ease;
+}
+
+.collection-slider-6items .category-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Category details styling */
+.collection-slider-6items .category-item .details {
+    padding: 10px 5px;
+}
+
+.collection-slider-6items .category-item .category-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.collection-slider-6items .category-item .counts {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+/* Slick slider navigation styling */
+.collection-slider-6items .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection-slider-6items .slick-prev {
+    left: -15px;
+}
+
+.collection-slider-6items .slick-next {
+    right: -15px;
+}
+
+.collection-slider-6items .slick-dots {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.collection-slider-6items .slick-dots li {
+    margin: 0 3px;
+}
+
+.collection-slider-6items .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.collection-slider-6items .slick-dots li.slick-active button {
+    background-color: #333;
+}
+
+/* iPhone 14/12 Pro specific styles (375px width) */
+@media (max-width: 375px) {
+    /* Force only 2 categories to show */
+    .collection-slider-6items .slick-slide {
+        width: calc(50% - 10px) !important; /* Force 2 slides per view */
+    }
+
+    .collection-slider-6items .category-item {
+        margin: 0 5px;
+        max-width: none !important;
+    }
+
+    /* Adjust image container for iPhone */
+    .collection-slider-6items .category-item .zoom-scal {
+        height: 160px !important;
+        overflow: hidden;
+    }
+
+    /* Make images fill the entire container */
+    .collection-slider-6items .category-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Adjust text size for iPhone */
+    .collection-slider-6items .category-item .category-title {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .collection-slider-6items .category-item .counts {
+        font-size: 10px;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Increase category card height on mobile */
+    .collection-slider-6items .category-item {
+        margin: 0 5px;
+    }
+
+    /* Increase image container height */
+    .collection-slider-6items .category-item .zoom-scal {
+        height: 180px !important;
+        overflow: hidden;
+    }
+
+    /* Make images fill the entire container */
+    .collection-slider-6items .category-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Adjust text size for better readability */
+    .collection-slider-6items .category-item .category-title {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .collection-slider-6items .category-item .counts {
+        font-size: 11px;
+    }
+    
+    /* Ensure slider loops continuously */
+    .collection-slider-6items .slick-track {
+        display: flex;
+    }
+    
+    /* Improve navigation for mobile */
+    .collection-slider-6items .slick-arrow {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .collection-slider-6items .slick-prev {
+        left: -10px;
+    }
+    
+    .collection-slider-6items .slick-next {
+        right: -10px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .collection-slider-6items .category-item .zoom-scal {
+        height: 160px !important;
+    }
+}

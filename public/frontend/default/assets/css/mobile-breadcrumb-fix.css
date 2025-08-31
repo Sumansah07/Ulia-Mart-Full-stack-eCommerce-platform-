@@ -1,0 +1,123 @@
+/* Mobile Breadcrumb Fix CSS */
+
+/* Mobile-specific adjustments for the header breadcrumb */
+@media (max-width: 767px) {
+    /* Make the category header bar more compact */
+    .category-header-bar {
+        padding: 10px 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Make the title smaller */
+    .category-header-bar h2 {
+        font-size: 16px !important;
+        letter-spacing: 0.3px !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* Adjust breadcrumb items */
+    .category-header-bar .breadcrumb-item a,
+    .category-header-bar .breadcrumb-item.active {
+        font-size: 12px !important;
+    }
+
+    /* Adjust the back button */
+    .back-to-products {
+        font-size: 11px !important;
+        padding: 3px 8px !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+
+    .back-to-products i {
+        font-size: 9px !important;
+    }
+
+    /* Adjust the layout for mobile */
+    .category-header-bar .col-md-6 {
+        text-align: left !important;
+    }
+
+    /* Stack the breadcrumb and back button on mobile */
+    .category-header-bar .text-md-end {
+        margin-top: 5px !important;
+    }
+
+    /* Make breadcrumb and back button display inline on the same line */
+    .category-header-bar nav.d-inline-block {
+        display: inline-block !important;
+        margin-right: 5px !important;
+        vertical-align: middle !important;
+    }
+
+    /* Adjust spacing between breadcrumb items */
+    .category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        content: ">" !important;
+        color: #777 !important;
+    }
+
+    /* Adjust the breadcrumb container */
+    .breadcrumb-container {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Further adjustments for very small screens */
+    .category-header-bar h2 {
+        font-size: 14px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .category-header-bar .breadcrumb-item a,
+    .category-header-bar .breadcrumb-item.active {
+        font-size: 10px !important;
+    }
+
+    .back-to-products {
+        font-size: 10px !important;
+        padding: 2px 6px !important;
+        margin-left: 0 !important;
+    }
+
+    /* Adjust the container padding */
+    .category-header-bar .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Make the breadcrumb more compact */
+    .category-header-bar .breadcrumb {
+        margin-bottom: 0 !important;
+    }
+
+    /* Adjust spacing between breadcrumb items */
+    .category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 3px !important;
+        padding-left: 3px !important;
+    }
+
+    /* Adjust the breadcrumb container for very small screens */
+    .breadcrumb-container {
+        justify-content: flex-start !important;
+        margin-top: 3px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* Make the breadcrumb and back button stack on very small screens */
+    .category-header-bar nav.d-inline-block,
+    .back-to-products {
+        margin-bottom: 3px !important;
+    }
+
+    /* Adjust the row spacing */
+    .category-header-bar .row {
+        row-gap: 0 !important;
+    }
+}

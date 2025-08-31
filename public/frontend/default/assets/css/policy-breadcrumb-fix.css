@@ -1,0 +1,123 @@
+/* Policy Breadcrumb Fix CSS */
+
+/* Styles for the policy pages breadcrumb */
+.category-header-bar {
+    background-color: #f0f0f0 !important;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.category-header-bar h2 {
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.category-header-bar .breadcrumb {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #777;
+}
+
+.category-header-bar .breadcrumb-item a {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.category-header-bar .breadcrumb-item.active {
+    color: #333;
+    font-size: 14px;
+}
+
+.back-to-products {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.back-to-products:hover {
+    background-color: #45a049;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-to-products i {
+    margin-right: 3px;
+    font-size: 11px;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+    /* Make the category header bar more compact */
+    .category-header-bar {
+        padding: 10px 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Make the title smaller */
+    .category-header-bar h2 {
+        font-size: 16px !important;
+        letter-spacing: 0.3px !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* Adjust breadcrumb items */
+    .category-header-bar .breadcrumb-item a,
+    .category-header-bar .breadcrumb-item.active {
+        font-size: 12px !important;
+    }
+
+    /* Adjust the back button */
+    .back-to-products {
+        font-size: 11px !important;
+        padding: 3px 8px !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+
+    .back-to-products i {
+        font-size: 9px !important;
+    }
+
+    /* Adjust the layout for mobile */
+    .category-header-bar .col-md-6 {
+        text-align: left !important;
+    }
+
+    /* Stack the breadcrumb and back button on mobile */
+    .category-header-bar .text-md-end {
+        margin-top: 5px !important;
+    }
+
+    /* Make breadcrumb and back button display inline on the same line */
+    .category-header-bar nav.d-inline-block {
+        display: inline-block !important;
+        margin-right: 5px !important;
+        vertical-align: middle !important;
+    }
+
+    /* Adjust spacing between breadcrumb items */
+    .category-header-bar .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        content: ">" !important;
+        color: #777 !important;
+    }
+}

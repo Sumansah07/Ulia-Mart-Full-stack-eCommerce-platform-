@@ -1,0 +1,132 @@
+/* Order Summary Layout Fix CSS */
+
+/* Fix order summary layout and spacing issues */
+.order-summary {
+    overflow: hidden !important;
+}
+
+.order-summary .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.order-summary .col-lg-8,
+.order-summary .col-lg-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Add proper gap between order summary table and subtotal section */
+.order-summary .row.g-3 > .col-lg-8 {
+    padding-right: 15px !important;
+}
+
+.order-summary .row.g-3 > .col-lg-4 {
+    padding-left: 15px !important;
+}
+
+/* Ensure order totals section doesn't overflow */
+.order-totals {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Fix button overflow */
+.order-totals .btn {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    /* On medium screens and below, stack the columns */
+    .order-summary .col-lg-8,
+    .order-summary .col-lg-4 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .order-summary .row.g-3 > .col-lg-8 {
+        padding-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .order-summary .row.g-3 > .col-lg-4 {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* On small screens, reduce padding */
+    .order-summary {
+        padding: 10px !important;
+    }
+
+    .order-totals {
+        padding: 10px !important;
+    }
+
+    .order-table {
+        padding: 5px !important;
+    }
+
+    /* Make table more compact on mobile */
+    .order-summary table th,
+    .order-summary table td {
+        padding: 5px 3px !important;
+        font-size: 12px !important;
+    }
+
+    .order-summary .title {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Ensure proper spacing between sections */
+.order-summary .col-lg-4 .title {
+    margin-top: 0 !important;
+}
+
+/* Fix any potential z-index issues */
+.order-summary {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Ensure the submit button stays within bounds */
+.order-totals .pt-3 {
+    overflow: hidden !important;
+}
+
+/* Additional safety for button container */
+.order-totals .pt-3.mb-0 {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Fix for external submit buttons */
+.text-center .btn.checkout {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important;
+}
+
+/* Ensure proper spacing for both order summary variants */
+.order-summary .col-lg-8.col-md-12,
+.order-summary .col-lg-4.col-md-12 {
+    box-sizing: border-box !important;
+}
+
+/* Additional responsive fixes for medium screens */
+@media (max-width: 1199.98px) {
+    .order-summary .col-lg-8,
+    .order-summary .col-lg-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}

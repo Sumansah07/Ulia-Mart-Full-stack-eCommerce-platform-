@@ -1,0 +1,84 @@
+/* Footer Overlap Fix CSS */
+
+/* Add padding to the footer bottom section on mobile devices */
+@media (max-width: 767px) {
+    /* Add padding to the footer bottom to prevent overlap with mobile toolbar */
+    .footer-bottom {
+        padding-top: 2px !important;
+        padding-bottom: 68px !important; /* Tight space for the mobile toolbar */
+    }
+
+    /* Ensure the copyright text is visible */
+    .footer-bottom .copyright {
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Adjust social icons container */
+    .footer-bottom .social-icons {
+        margin-bottom: 10px !important;
+    }
+
+    /* Make sure the back-to-top button doesn't overlap with the toolbar */
+    .back-to-top {
+        bottom: 70px !important;
+    }
+
+    /* Ensure the footer is above other content */
+    .main-footer {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Consistent padding for smaller screens */
+    .footer-bottom {
+        padding-top: 3px !important;
+        padding-bottom: 40px !important; /* Consistent with larger mobile screens */
+    }
+
+    /* Ensure main footer has proper spacing on small screens */
+    .footer-bottom {
+        padding-bottom: 68px !important; /* Tight space for mobile navigation */
+    }
+
+    /* Keep single line layout even on small screens */
+    .footer-bottom .row {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    .footer-bottom .col-md-6 {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-bottom .col-md-6:last-child {
+        text-align: center !important;
+    }
+
+    /* Center the social icons on small screens */
+    .footer-bottom .col-md-6.text-end {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .footer-bottom .d-flex.justify-content-end {
+        justify-content: center !important;
+    }
+}
+
+/* Fix for iOS devices with bottom safe area (notch phones) */
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 767px) {
+        .footer-bottom {
+            padding-top: 2px !important;
+            padding-bottom: 78px !important; /* Tight padding for iOS devices with safe area */
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/* Fix for the green zoom lens in product detail page */
+
+/* Override the default zoom lens styles */
+.zoomLens {
+    background-color: transparent !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/* Override the zoom window styles */
+.zoomWindow {
+    border: 1px solid #e0e0e0 !important;
+    background-color: white !important;
+}
+
+/* Fix for the zoom icon */
+.zoompro-wrap {
+    position: relative;
+}
+
+/* Hide any green background on zoom elements */
+.zoomContainer, 
+.zoomWindowContainer,
+.zoomWindow,
+.zoomLens {
+    background-color: transparent !important;
+}
+
+/* Ensure the zoom lens has a subtle border */
+.zoomLens {
+    border: 1px dashed rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Make sure the zoom window has proper styling */
+.zoomWindow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix for any zoom buttons or controls */
+.product-buttons .btn {
+    background-color: transparent !important;
+    border: 1px solid #e0e0e0 !important;
+    color: #333 !important;
+}
+
+.product-buttons .btn:hover {
+    background-color: #f5f5f5 !important;
+    color: #000 !important;
+}
+
+/* Fix for the zoom icon in the corner */
+.zoomIcon {
+    background-color: transparent !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+/* Fix for any zoom-related elements with green background */
+[class*="zoom-"] {
+    background-color: transparent !important;
+}
+
+/* Fix for the elevateZoom plugin's zoom window */
+.zoomContainer {
+    z-index: 9999;
+}
+
+/* Ensure the zoom lens has a good cursor */
+.zoomLens {
+    cursor: crosshair !important;
+}

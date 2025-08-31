@@ -1,0 +1,172 @@
+@extends('layouts.auth')
+
+
+@section('title')
+    {{ localize('Login') }}
+@endsection
+
+
+@section('contents')
+<style>
+    .form-label {
+        color: #198754 !important;
+    }
+</style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white p-0">
+                        <ul class="nav nav-tabs nav-fill">
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="{{ route('register') }}">{{ localize('Register') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active py-3" href="{{ route('login') }}">{{ localize('Login') }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="{{ route('login') }}" method="POST" id="login-form">
+                            @csrf
+                            @if (getSetting('enable_recaptcha') == 1)
+                                {!! RecaptchaV3::field('recaptcha_token') !!}
+                            @endif
+
+                            <h4 class="mb-3">{{ localize('Login to Your Account') }}</h4>
+                            <p class="text-muted mb-4">{{ localize('Enter your credentials to access your account') }}</p>
+
+                            <div class="mb-3">
+                                <input type="hidden" name="login_with" class="login_with" value="email">
+                                <span class="login-email @if (old('login_with') == 'phone') d-none @endif">
+                                    <label class="form-label">{{ localize('Email') }}</label>
+                                    <input type="email" id="email" name="email"
+                                        placeholder="your@email.com" class="form-control"
+                                        value="{{ old('email') }}" required>
+                                    <small class="mt-1 d-block">
+                                        <a href="javascript:void(0);" class="login-with-phone-btn"
+                                            onclick="handleLoginWithPhone()">
+                                            {{ localize('Login with phone?') }}</a>
+                                    </small>
+                                </span>
+
+                                <span class="login-phone @if (old('login_with') == 'email' || old('login_with') == '') d-none @endif">
+                                    <label class="form-label">{{ localize('Phone') }}</label>
+                                    <input type="text" id="phone" name="phone" placeholder="+xxxxxxxxxx"
+                                        class="form-control" value="{{ old('phone') }}">
+                                    <small class="mt-1 d-block">
+                                        <a href="javascript:void(0);" class="login-with-email-btn"
+                                            onclick="handleLoginWithEmail()">
+                                            {{ localize('Login with email?') }}</a>
+                                    </small>
+                                </span>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-label">{{ localize('Password') }}</label>
+                                    <a href="{{ route('password.request') }}" class="small">{{ localize('Forgot password?') }}</a>
+                                </div>
+                                <input type="password" name="password" id="password"
+                                    placeholder="••••••••" class="form-control" required>
+                            </div>
+
+                            @if (env('DEMO_MODE') == 'On')
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="fw-bold">Admin Access</label>
+                                            <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom pb-2">
+                                                <small>admin@themetags.com</small>
+                                                <small>123456</small>
+                                                <button class="btn btn-sm btn-secondary py-0 px-2" type="button"
+                                                    onclick="copyAdmin()">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-success w-100 sign-in-btn"
+                                    style="background-color: #198754; border-color: #198754;"
+                                    onclick="handleSubmit()">{{ localize('Login') }}</button>
+                            </div>
+
+                            <div class="row g-4">
+                                <!--social login-->
+                                @include('frontend.default.inc.social')
+                                <!--social login-->
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <p>{{ localize("Don't have an account?") }}
+                                    <a href="javascript:void(0);" class="text-success fw-bold" onclick="switchToRegister()">
+                                        {{ localize('Create new account') }}
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('scripts')
+    <script>
+        "use strict";
+
+        // Switch to register page
+        function switchToRegister() {
+            window.location.href = "{{ route('register') }}";
+        }
+
+        // copyAdmin
+        function copyAdmin() {
+            $('#email').val('admin@themetags.com');
+            $('#password').val('123456');
+        }
+
+        // copyCustomer
+        function copyCustomer() {
+            $('#email').val('customer@themetags.com');
+            $('#password').val('123456');
+        }
+        // copyCustomer
+        function copyDeliveryMan() {
+            $('#email').val('delivery-man@themetags.com');
+            $('#password').val('123456');
+        }
+
+        // change input to phone
+        function handleLoginWithPhone() {
+            $('.login_with').val('phone');
+
+            $('.login-email').addClass('d-none');
+            $('.login-email input').prop('required', false);
+
+            $('.login-phone').removeClass('d-none');
+            $('.login-phone input').prop('required', true);
+        }
+
+        // change input to email
+        function handleLoginWithEmail() {
+            $('.login_with').val('email');
+            $('.login-email').removeClass('d-none');
+            $('.login-email input').prop('required', true);
+
+            $('.login-phone').addClass('d-none');
+            $('.login-phone input').prop('required', false);
+        }
+
+
+        // disable login button
+        function handleSubmit() {
+            $('#login-form').on('submit', function(e) {
+                $('.sign-in-btn').prop('disabled', true);
+            });
+        }
+    </script>
+@endsection
